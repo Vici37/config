@@ -1,0 +1,31 @@
+These are my frequently used commands that I can't seem to remember...
+
+----------------------------------------------------------------------------------------MISC
+pdflatex file.tex																							-compiles file.tex to pdf
+subl file.*																										-opens file in sublime
+seq {number}																									-creates a sequence of numbers from 1 to number
+dpkg --list																										-list all packages installed
+irb																														-open a Ruby sub shell
+ri {name}																											-looks up Ruby documentation on name
+convert *.picture *.differentpicture													-converts picture format to different picture formats (man imagemagick)
+sudo apt-get install sun-java6-plugin													-installs java plugin for linux mint for browsers
+acpi																													-battery information
+dd if=/dev/cdrom of=~/.iso/cd.iso															-makes an iso of a cd, where cd.iso is the iso made
+mkisofs -o /directory/cd.iso /directory1/files								-makes an iso of files
+sudo mount /directory/to/iso /mount/location									-mounts the iso at the location folder 
+
+----------------------------------------------------------------------------------------GIT
+git init																											-start git
+git remote add origin git@github.com:vici37/repo.git					-connects this computer to a repo on github
+git pull origin master																				-pull stuff from repo
+git commit 
+
+----------------------------------------------------------------------------------------VIM
+s/foo/bar/g																										-replace all instances of foo with bar on that line
+%s/foo/bar/g																									-find and replace all instances of foo with bar
+%s/foo/bar/gc																									-find and ask permission to replace all instances of foo with bar
+%s/\<foo\>/bar/gc																							-change only whole words matching foo to bar, asking for confirmation
+%s/foo/bar/gci																								-changes foo to bar case sensitive, asking...
+
+----------------------------------------------------------------------------------------REGEXP
+

@@ -1,0 +1,7 @@
+alias yogbox='cd ~/.techniclauncher/yogbox'
+alias website='cd /var/www/'
+alias ll='ls -l'
+alias lr='ls -R'
+alias la='ls -a'
+alias rmr='rm -R'
+alias du='du -h'

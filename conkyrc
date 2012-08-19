@@ -1,0 +1,69 @@
+ckground yes
+use_xft yes
+xftfont HandelGotD:size=9
+xftalpha 0.5
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 5
+maximum_width 220
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color red
+default_outline_color green
+alignment top_right
+gap_x 20
+gap_y 48
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+TEXT
+$alignc ${time %T}
+$sysname $kernel on $machine
+Uptime $alignr $uptime
+Load $alignr $loadavg
+Hostname $alignr $nodename
+wlan0 $alignr ${addr wlan0}
+Inbound $alignr ${downspeed wlan0} kb/s
+${hr 1}
+${downspeedgraph wlan0}
+${hr 1}
+Outbound $alignr ${upspeed wlan0} kb/s
+${hr 1}
+${upspeedgraph wlan0}
+${hr 1}
+$processes processes ($running_processes running)
+CPU temp $alignr ${exec sensors | grep temp2 | awk '{print $2}' | sed 's/°//' | sed 's/+//'} 
+${execbar sensors | grep temp2 | awk '{print $2}' | sed 's/°//' | sed 's/+//'}
+CPU1 $alignr ${cpu cpu0}%
+${cpubar cpu0}
+CPU2 $alignr ${cpu cpu1}%
+${cpubar cpu1}
+CPU3 $alignr ${cpu cpu2}%
+${cpubar cpu2}
+GPU $alignr ${nvidia temp} C / ${nvidia threshold} C
+MEM $alignc $mem / $memmax $alignr $memperc%
+$membar
+/ $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_free_perc /}%
+${fs_bar /}
+/home $alignc ${fs_used /home} / ${fs_size /home} $alignr ${fs_free_perc /home}%
+${fs_bar /home}
+
+
+NAME $alignr    CPU    MEM
+${top name 1} $alignr ${top cpu 1} ${top mem 1}
+${top name 2} $alignr ${top cpu 2} ${top mem 2}
+${top name 3} $alignr ${top cpu 3} ${top mem 3}
+${top name 4} $alignr ${top cpu 4} ${top mem 4}
+${top name 5} $alignr ${top cpu 5} ${top mem 5}
+${top name 6} $alignr ${top cpu 6} ${top mem 6}
+${top name 7} $alignr ${top cpu 7} ${top mem 7}
+${top name 8} $alignr ${top cpu 8} ${top mem 8}
