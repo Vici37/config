@@ -62,10 +62,14 @@ cmap W w
 cmap WQ wq
 cmap wQ wq
 cmap Q q
+"Quick shortcut for NERDTree
+cmap nt NERDTree
 
 ab vecd vector<double>
 ab vecc vector<char>
 ab veci vector<int>
 ab vecb vector<bool>
 ab vecl vector<long>
-ab tso tsornson
+ab ts tsornson
+
+colo wombat
