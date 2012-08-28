@@ -53,7 +53,7 @@ set ignorecase	"ignore cases in search
 set showmatch		"matching {[(
 set smartcase		"smart case matching
 "let ; work like :
-nnoremap ; :		
+nmap ; :		
 "let j and k move down/up next row, not next line
 nnoremap j gj
 nnoremap k gk
@@ -62,14 +62,21 @@ cmap W w
 cmap WQ wq
 cmap wQ wq
 cmap Q q
-"Quick shortcut for NERDTree
-cmap nt NERDTree
+nmap <silent> <C-h> :silent noh<CR>
 
 ab vecd vector<double>
 ab vecc vector<char>
 ab veci vector<int>
 ab vecb vector<bool>
 ab vecl vector<long>
-ab ts tsornson
+ab tso tsornson
 
 colo wombat
+set foldmethod=syntax
+set foldlevelstart=20
+
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
+
+nmap R tabn
+nmap L tabp

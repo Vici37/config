@@ -1,6 +1,9 @@
 [user]
-	name = Troy Sornson
+	name = Troy A. Sornson
 	email = troyasornson37@gmail.com
-[github]
-	user = Vici37
-	token = 05847c41b8ed459dfd4ee938af938130
+	editor = 'vim'
+[core]
+	editor = vim
+	exludesfile = /home/troy/.gitignore_global
+[help]
+	autocorrect = 1
