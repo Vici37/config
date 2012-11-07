@@ -1,9 +1,0 @@
-[user]
-	name = Troy A. Sornson
-	email = troyasornson37@gmail.com
-	editor = 'vim'
-[core]
-	editor = vim
-	exludesfile = /home/troy/.gitignore_global
-[help]
-	autocorrect = 1

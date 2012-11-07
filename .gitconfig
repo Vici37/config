@@ -1,0 +1,18 @@
+[user]
+	name = Troy A. Sornson
+	email = troyasornson37@gmail.com
+	editor = 'vim'
+[core]
+	editor = vim
+	excludesfile = /home/troy/.gitignore_global
+[help]
+	autocorrect = 1
+[alias]
+	ci=commit
+	st=status
+	cia=commit -a
+	llog=log --date=local
+	br=branch
+	co=checkout
+	tr=log --graph --pretty=format:'%C(cyan)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	aliases= !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'

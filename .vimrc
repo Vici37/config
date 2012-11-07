@@ -18,6 +18,7 @@ runtime! debian.vim
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
 if has("syntax")
+	let fortran_free_source=1
   syntax on
 endif
 
@@ -41,6 +42,7 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+compiler ruby
 :filetype plugin on
 
 set tabstop=2 	"Set tab spac
@@ -52,17 +54,27 @@ set hlsearch		"highlight search results
 set ignorecase	"ignore cases in search
 set showmatch		"matching {[(
 set smartcase		"smart case matching
+set nocompatible
+
+set undodir=~/.vim/undos//
+set undofile
+set undolevels =1000
+set undoreload =10000
+
 "let ; work like :
-nmap ; :		
+nmap ; :
 "let j and k move down/up next row, not next line
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 "fix shift hold key fixes
 cmap W w
 cmap WQ wq
 cmap wQ wq
 cmap Q q
-nmap <silent> <C-h> :silent noh<CR>
+cmap nrdt NERDTree
+nmap <silent> <C-n> :silent noh<CR>
 
 ab vecd vector<double>
 ab vecc vector<char>
@@ -78,5 +90,87 @@ set foldlevelstart=20
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
-nmap R tabn
-nmap L tabp
+set noswapfile
+set nobackup
+
+nmap <silent> <C-l> :tabn<CR>
+nmap <silent> <C-h> :tabp<CR>
+nmap n nzz
+nmap N Nzz
+
+set scrolloff=1000
+
+set laststatus=2
+set statusline=%t%h%m%r\ %{StatuslineLongLineWarning()}%=%l\ /\ %L,\ %c\ %P
+
+"let g:loaded_acp = 1
+
+autocmd cursorhold,bufwritepost * unlet! b:statusline_long_line_warning
+function! StatuslineLongLineWarning()
+	if !exists("b:statusline_long_line_warning")
+		let long_line_lens = s:LongLines()
+		if len(long_line_lens) > 0
+			let b:statusline_long_line_warning = "[" .
+			\ '#' . len(long_line_lens) . 
+			\ '>' . (&tw ? &tw : 80) . "," .
+			\ 'm' . s:LongestLine() . "," .
+			\ '$' . max(long_line_lens) . "]"
+		else
+			let b:statusline_long_line_warning = ""
+    endif
+  endif
+  return b:statusline_long_line_warning
+endfunction
+ 
+ "return a list containing the lengths of the long lines in this buffer
+ function! s:LongLines()
+     let threshold = (&tw ? &tw : 80)
+     let spaces = repeat(" ", &ts)
+ 
+     let long_line_lens = []
+ 
+     let i = 1
+     while i <= line("$")
+         let len = strlen(substitute(getline(i), '\t', spaces, 'g'))
+         if len > threshold
+             call add(long_line_lens, len)
+         endif
+         let i += 1
+     endwhile
+ 
+     return long_line_lens
+ endfunction
+ 
+ "return a list containing the lengths of the long lines in this buffer
+ function! s:LongestLine()
+ 		 let threshold = (&tw ? &tw : 80)
+     let spaces = repeat(" ", &ts)
+ 
+     let longest_line = 1
+		 let max = 0
+ 
+     let i = 1
+     while i <= line("$")
+         let len = strlen(substitute(getline(i), '\t', spaces, 'g'))
+         if len > max
+             let longest_line = i
+						 let max = len
+         endif
+         let i += 1
+     endwhile
+ 
+     return longest_line
+ endfunction
+
+ "find the median of the given array of numbers
+ function! s:Median(nums)
+     let nums = sort(a:nums)
+     let l = len(nums)
+ 
+     if l % 2 == 1
+         let i = (l-1) / 2
+         return nums[i]
+     else
+         return (nums[l/2] + nums[(l/2)-1]) / 2
+     endif
+endfunction
