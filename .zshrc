@@ -13,6 +13,29 @@ chpwd() {
 
 }
 
+# This function is called PERIOD number of seconds
+PERIOD=300
+periodic() { 
+	temp=`acpi | awk ' { print $4 } ' | sed 's/%,//g'`
+	if [[ 50 -gt temp ]] {
+		RIGHT_DISPLAY_PERIODIC='Bat:%F{red}'$temp
+	} else {
+		RIGHT_DISPLAY_PERIODIC=''
+	}
+	temp=`date +%H`
+	if [[ $temp -gt 7 && $temp -lt 12 ]] {
+		setxkbmap dvorak
+	} else {
+		setxkbmap us
+	}
+	xmodmap ~/.Xmodmap
+}
+
+# This function is called after a terminal exits (not sub shells)
+zshexit() { 
+	`~/.scripts/backup.sh`
+}
+
 # Set up the prompt
 setopt PROMPT_SUBST 
 
@@ -22,7 +45,7 @@ autoload -U colors
 colors
 promptinit
 PROMPT=$'%{\e[1;32m%}%m[%*] %c (%?) >%{\e[0m%} '
-RPROMPT=$'%{\e[1;32m%}''${vcs_info_msg_0_}'$'%{\e[0m%}'
+RPROMPT=$'%{\e[1;32m%}''${vcs_info_msg_0_} ${RIGHT_DISPLAY_PERIODIC} ${ERROR_CODE_PRINT}'$'%{\e[0m%}'
 
 setopt histignorealldups sharehistory
 
@@ -53,11 +76,12 @@ zstyle ':completion:*' menu select=long
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
+zstyle ':completion:*:functions' ignored-patterns '_*'
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-zstyle ':completion:*' users-hosts tsornson@imagine.mines.edu tsornson@ch120-13 tsornson@mio troy@192.168.1.137
+zstyle ':completion:*' users-hosts tsornson@imagine.mines.edu tsornson@ch120-13 tsornson@mio troy@192.168.1.137 tsornson@radio.mines.edu
 
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
@@ -124,7 +148,7 @@ setopt RC_EXPAND_PARAM
 alias suspend='bash ~/.scripts/suspend.sh'
 alias l='ls'
 alias ls='ls --color=auto'
-alias la='ls -a'
+alias la='ls -A'
 alias ll='ls -l'
 alias du='du -h'
 alias cpr='cp -r'
@@ -132,6 +156,12 @@ alias shutdown='sudo shutdown -P now'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
+alias .='./'
+
+alias -g G='| grep'
+alias -g L='| less'
+alias -g NE='2> /dev/null'
+alias -g NO='> /dev/null'
 
 alias VIM='vim -p'
 alias vim='vim -p'
@@ -165,9 +195,9 @@ alias -s h=vim
 alias -s html=vim
 alias -s css=vim
 alias -s f90=vim
-alias -s rb=vim
-alias -s py=vim
-alias -s sh=vim
+#alias -s rb=vim
+#alias -s py=vim
+#alias -s sh=vim
 alias -s hh=vim
 alias -s cc=vim
 alias -s java=vim
@@ -178,3 +208,5 @@ alias -s php=vim
 alias -s pdf=evince
 alias -s odt=soffice
 alias -s ods=soffice
+
+bindkey "^[[F" end-of-line
