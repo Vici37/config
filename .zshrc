@@ -1,3 +1,5 @@
+export R_HOME=/usr/lib/R
+
 # This function is called before each prompt
 precmd() {
 	if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]] {
@@ -16,19 +18,19 @@ chpwd() {
 # This function is called PERIOD number of seconds
 PERIOD=300
 periodic() { 
-	temp=`acpi | awk ' { print $4 } ' | sed 's/%,//g'`
-	if [[ 50 -gt temp ]] {
+	temp=`acpi | awk ' { print $4 } ' | sed 's/[%,]//g'`
+	if [[ 50 -gt $temp ]] {
 		RIGHT_DISPLAY_PERIODIC='Bat:%F{red}'$temp
 	} else {
 		RIGHT_DISPLAY_PERIODIC=''
 	}
-	temp=`date +%H`
-	if [[ $temp -gt 7 && $temp -lt 12 ]] {
-		setxkbmap dvorak
-	} else {
-		setxkbmap us
-	}
-	xmodmap ~/.Xmodmap
+	#temp=`date +%H`
+	##if [[ $temp -gt 7 && $temp -lt 13 ]] {
+	#	setxkbmap dvorak
+	##} else {
+	#	#setxkbmap us
+	##}
+	#xmodmap ~/.Xmodmap
 }
 
 # This function is called after a terminal exits (not sub shells)
@@ -146,6 +148,7 @@ setopt EXTENDED_GLOB
 setopt RC_EXPAND_PARAM
 
 alias suspend='bash ~/.scripts/suspend.sh'
+alias stpshtdwn='bash ~/.scripts/stop_shutdown.sh'
 alias l='ls'
 alias ls='ls --color=auto'
 alias la='ls -A'
@@ -168,9 +171,10 @@ alias vim='vim -p'
 alias vi='vim'
 
 alias website='cd /var/www/'
+alias movies='cd /media/sda3/Users/Troy\ Sornson/My\ Documents/My\ Videos/My\ Videos/movies/'
 
 alias t='bash ~/.scripts/todo.sh'
-alias tls='t -c ls'
+alias tl='cal;echo "----------------------"; t -c ls'
 alias trm='t -cfn rm'
 alias ta='t add'
 alias th='t help'
@@ -186,6 +190,7 @@ alias r='mv -t ~/.trash'
 alias clear-trash='shred -zu ~/.trash/*'
 alias cal='cal -3'
 alias imagine='ssh tsornson@imagine.mines.edu'
+alias hash='ruby ~/.scripts/hash.rb'
 
 # open these types of files in vim
 alias -s txt=vim
@@ -209,4 +214,4 @@ alias -s pdf=evince
 alias -s odt=soffice
 alias -s ods=soffice
 
-bindkey "^[[F" end-of-line
+alias toilers-connect='ssh -f -N -L 7777:toilers.mines.edu:22 tsornson@imagine.mines.edu'

@@ -55,6 +55,7 @@ set ignorecase	"ignore cases in search
 set showmatch		"matching {[(
 set smartcase		"smart case matching
 set nocompatible
+set textwidth=80
 
 set undodir=~/.vim/undos//
 set undofile
@@ -73,8 +74,9 @@ cmap W w
 cmap WQ wq
 cmap wQ wq
 cmap Q q
-cmap nrdt NERDTree
+cmap :nrdt NERDTree
 nmap <silent> <C-n> :silent noh<CR>
+nmap <silent> <C-c> :%s/\n\s*{/ {/g<CR>''<CR>
 
 ab vecd vector<double>
 ab vecc vector<char>
