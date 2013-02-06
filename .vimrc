@@ -42,6 +42,16 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Bundles
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+
+filetype plugin indent on
+
 compiler ruby
 :filetype plugin on
 
@@ -55,7 +65,6 @@ set ignorecase	"ignore cases in search
 set showmatch		"matching {[(
 set smartcase		"smart case matching
 set nocompatible
-set textwidth=80
 
 set undodir=~/.vim/undos//
 set undofile
@@ -65,10 +74,10 @@ set undoreload =10000
 "let ; work like :
 nmap ; :
 "let j and k move down/up next row, not next line
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
+"nnoremap j gj
+"nnoremap k gk
+"vnoremap j gj
+"vnoremap k gk
 "fix shift hold key fixes
 cmap W w
 cmap WQ wq
