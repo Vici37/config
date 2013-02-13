@@ -83,7 +83,7 @@ zstyle ':completion:*:functions' ignored-patterns '_*'
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-zstyle ':completion:*' users-hosts tsornson@imagine.mines.edu tsornson@ch120-13 tsornson@mio troy@192.168.1.137 tsornson@radio.mines.edu tsornson@susan
+zstyle ':completion:*' users-hosts tsornson@imagine.mines.edu tsornson@ch120-13 tsornson@mio troy@192.168.1.137 tsornson@radio.mines.edu tsornson@susan tsornson@gc297-13 tsornson@bb136-13
 
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true

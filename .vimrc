@@ -45,15 +45,18 @@ endif
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+call pathogen#infect()
 
 " Bundles
 Bundle 'gmarik/vundle'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
+
+:filetype plugin on
+let g:snips_trigger_key = '<C-b>'
 
 filetype plugin indent on
 
 compiler ruby
-:filetype plugin on
 
 set tabstop=2 	"Set tab spac
 set number			"show line numer set nonumber to remove
@@ -85,7 +88,8 @@ cmap wQ wq
 cmap Q q
 cmap :nrdt NERDTree
 nmap <silent> <C-n> :silent noh<CR>
-nmap <silent> <C-c> :%s/\n\s*{/ {/g<CR>''<CR>
+nmap <silent> <C-c> gg=G''<CR>:%s/\n\s*{/ {/g<CR>''<CR>
+nmap <F1> :RainbowParenthesesToggleAll<CR>
 
 ab vecd vector<double>
 ab vecc vector<char>
@@ -105,7 +109,7 @@ set noswapfile
 set nobackup
 
 nmap <silent> <C-l> :tabn<CR>
-nmap <silent> <C-h> :tabp<CR>
+"nmap <silent> <C-h> :tabp<CR>
 nmap n nzz
 nmap N Nzz
 
