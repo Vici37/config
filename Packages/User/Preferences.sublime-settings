@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Dayle Rees Color Schemes/TronLegacy.tmTheme",
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"sublimeCodeIntel"
+	],
+	"tab_size": 2,
+	"vintage_start_in_command_mode": true,
+	"word_wrap": true
+}

@@ -1,0 +1,15 @@
+{
+	"installed_packages":
+	[
+		"Alignment",
+		"Block Cursor Everywhere",
+		"BracketHighlighter",
+		"Dayle Rees Color Schemes",
+		"Git",
+		"Package Control",
+		"SublimeLinter",
+		"SublimeREPL",
+		"Tag",
+		"VintageEx"
+	]
+}

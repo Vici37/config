@@ -19,7 +19,7 @@ runtime! debian.vim
 " line enables syntax highlighting by default.
 if has("syntax")
 	let fortran_free_source=1
-  syntax on
+	syntax on
 endif
 
 " If using a dark background within the editing area and syntax highlighting
@@ -39,7 +39,7 @@ endif
 "endif
 
 if filereadable("/etc/vim/vimrc.local")
-  source /etc/vim/vimrc.local
+	source /etc/vim/vimrc.local
 endif
 
 filetype off
@@ -89,7 +89,8 @@ cmap Q q
 cmap :nrdt NERDTree
 nmap <silent> <C-n> :silent noh<CR>
 nmap <silent> <C-c> gg=G''<CR>:%s/\n\s*{/ {/g<CR>''<CR>
-nmap <F1> :RainbowParenthesesToggleAll<CR>
+nmap <silent> <F1> :RainbowParenthesesToggleAll<CR>
+nmap <silent> <F2> :call TogglePaste()<CR>
 
 ab vecd vector<double>
 ab vecc vector<char>
@@ -101,6 +102,7 @@ ab tso tsornson
 colo wombat
 set foldmethod=syntax
 set foldlevelstart=20
+set wildmode=longest,list,full
 
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
@@ -121,71 +123,84 @@ set statusline=%t%h%m%r\ %{StatuslineLongLineWarning()}%=%l\ /\ %L,\ %c\ %P
 "let g:loaded_acp = 1
 
 autocmd cursorhold,bufwritepost * unlet! b:statusline_long_line_warning
+
+function! CleanFile()
+
+endfunction
+
+function! TogglePaste()
+	if &paste
+		set nopaste
+	else
+		set paste
+	end
+endfunction
+
 function! StatuslineLongLineWarning()
 	if !exists("b:statusline_long_line_warning")
 		let long_line_lens = s:LongLines()
 		if len(long_line_lens) > 0
 			let b:statusline_long_line_warning = "[" .
-			\ '#' . len(long_line_lens) . 
-			\ '>' . (&tw ? &tw : 80) . "," .
-			\ 'm' . s:LongestLine() . "," .
-			\ '$' . max(long_line_lens) . "]"
+						\ '#' . len(long_line_lens) . 
+						\ '>' . (&tw ? &tw : 80) . "," .
+						\ 'm' . s:LongestLine() . "," .
+						\ '$' . max(long_line_lens) . "]"
 		else
 			let b:statusline_long_line_warning = ""
-    endif
-  endif
-  return b:statusline_long_line_warning
+		endif
+	endif
+	return b:statusline_long_line_warning
 endfunction
- 
- "return a list containing the lengths of the long lines in this buffer
- function! s:LongLines()
-     let threshold = (&tw ? &tw : 80)
-     let spaces = repeat(" ", &ts)
- 
-     let long_line_lens = []
- 
-     let i = 1
-     while i <= line("$")
-         let len = strlen(substitute(getline(i), '\t', spaces, 'g'))
-         if len > threshold
-             call add(long_line_lens, len)
-         endif
-         let i += 1
-     endwhile
- 
-     return long_line_lens
- endfunction
- 
- "return a list containing the lengths of the long lines in this buffer
- function! s:LongestLine()
- 		 let threshold = (&tw ? &tw : 80)
-     let spaces = repeat(" ", &ts)
- 
-     let longest_line = 1
-		 let max = 0
- 
-     let i = 1
-     while i <= line("$")
-         let len = strlen(substitute(getline(i), '\t', spaces, 'g'))
-         if len > max
-             let longest_line = i
-						 let max = len
-         endif
-         let i += 1
-     endwhile
- 
-     return longest_line
- endfunction
 
- "find the median of the given array of numbers
- function! s:Median(nums)
-     let nums = sort(a:nums)
-     let l = len(nums)
- 
-     if l % 2 == 1
-         let i = (l-1) / 2
-         return nums[i]
-     else
-         return (nums[l/2] + nums[(l/2)-1]) / 2
-     endif
+"return a list containing the lengths of the long lines in this buffer
+function! s:LongLines()
+	let threshold = (&tw ? &tw : 80)
+	let spaces = repeat(" ", &ts)
+
+	let long_line_lens = []
+
+	let i = 1
+	while i <= line("$")
+		let len = strlen(substitute(getline(i), '\t', spaces, 'g'))
+		if len > threshold
+			call add(long_line_lens, len)
+		endif
+		let i += 1
+	endwhile
+
+	return long_line_lens
+endfunction
+
+"return a list containing the lengths of the long lines in this buffer
+function! s:LongestLine()
+	let threshold = (&tw ? &tw : 80)
+	let spaces = repeat(" ", &ts)
+
+	let longest_line = 1
+	let max = 0
+
+	let i = 1
+	while i <= line("$")
+		let len = strlen(substitute(getline(i), '\t', spaces, 'g'))
+		if len > max
+			let longest_line = i
+			let max = len
+		endif
+		let i += 1
+	endwhile
+
+	return longest_line
+endfunction
+
+"find the median of the given array of numbers
+function! s:Median(nums)
+	let nums = sort(a:nums)
+	let l = len(nums)
+
+	if l % 2 == 1
+		let i = (l-1) / 2
+		return nums[i]
+	else
+		return (nums[l/2] + nums[(l/2)-1]) / 2
+	endif
 endfunction

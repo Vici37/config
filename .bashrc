@@ -43,3 +43,5 @@ alias r='mv -t ~/.trash'
 alias clear-trash='shred -zu ~/.trash/*'
 alias cal='cal -3'
 alias imagine='ssh tsornson@imagine.mines.edu'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

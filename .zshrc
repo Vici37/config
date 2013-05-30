@@ -1,4 +1,6 @@
 export R_HOME=/usr/lib/R
+export S3_KEY=AKIAIYL43F4KDM6U2G7A
+export S3_SECRET=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
 
 # This function is called before each prompt
 precmd() {
@@ -156,7 +158,7 @@ alias ll='ls -l'
 alias du='du -h'
 alias cpr='cp -r'
 alias shutdown='sudo shutdown -P now'
-alias make='make -B'
+#alias make='make -B'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
@@ -170,8 +172,13 @@ alias -g NO='> /dev/null'
 alias VIM='vim -p'
 alias vim='vim -p'
 alias vi='vim'
+alias sub='~/.sublime_text_2/sublime_text&'
 
 alias website='cd /var/www/'
+alias sc='cd ~/.desktop/school/'
+alias ad='cd ~/.desktop/school/applied_algorithms_data_structures/'
+alias op='cd ~/.desktop/school/operating_systems/'
+alias we='cd ~/.desktop/school/web_apps/'
 alias movies='cd /media/sda3/Users/Troy\ Sornson/My\ Documents/My\ Videos/My\ Videos/movies/'
 
 alias t='bash ~/.scripts/todo.sh'
@@ -214,5 +221,10 @@ alias -s php=vim
 alias -s pdf=evince
 alias -s odt=soffice
 alias -s ods=soffice
+alias -s latex=pdflatex
+alias -s tex=pdflatex
 
-alias toilers-connect='ssh -f -N -L 7777:toilers.mines.edu:22 tsornson@imagine.mines.edu'
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

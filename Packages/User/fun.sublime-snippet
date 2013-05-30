@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[${1:void} ${2:funName}(${3}) {
+	${4}
+}]]></content>
+	<tabTrigger>fun</tabTrigger>
+	<scope>source.c++, source.c</scope>
+</snippet>

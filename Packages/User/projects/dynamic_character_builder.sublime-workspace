@@ -1,0 +1,710 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"all",
+				"all_saved"
+			],
+			[
+				"templat",
+				"template_fields"
+			],
+			[
+				"tex",
+				"text_field_tag"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"options",
+				"options_for_select"
+			],
+			[
+				"sel",
+				"select_tag"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"fild",
+				"fields_with_value"
+			],
+			[
+				"typ",
+				"type_of_field"
+			],
+			[
+				"new",
+				"new_character_path"
+			],
+			[
+				"text",
+				"text_field_tag"
+			],
+			[
+				"arr",
+				"arrival_time"
+			],
+			[
+				"det",
+				"detailed"
+			],
+			[
+				"use",
+				"user_threads_count"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/assets/stylesheets/pages.css.scss",
+			"settings":
+			{
+				"buffer_size": 341,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/pages/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 660,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++.sublime-build",
+	"command_palette":
+	{
+		"height": 138.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"git",
+				"Git: Open Modified Files"
+			],
+			[
+				":e",
+				":$ - EOF"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/controllers/pages_controller.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/pages/index.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/character_sheets/edit.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/controllers/character_sheets_controller.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/character_sheets/show.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/models/character_sheet.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/layouts/application.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/character_sheets/_character_form.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/templates/_generated_template_form.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/models/template.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/models/character_field.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/controllers/templates_controller.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/character_sheets/index.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/character_sheets/_form.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/pages/new_character.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/character_sheets/new.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/templates/_form.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/models/template_field.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/models/user.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/db/migrate/20130423173714_add_user_id_to_character_sheet.rb",
+		"/home/troy/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/troy/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/db/migrate/20130422031120_add_template_to_character_sheet.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/db/migrate/20130422025749_create_character_fields.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/db/migrate/20130422030341_add_character_sheet_id_to_character_field.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/assets/stylesheets/pages.css.scss",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/assets/stylesheets/application.css",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/templates/new.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/templates/edit.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/config/environments/production.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/config/environments/development.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/templates/show.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/config/routes.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/db/migrate/20130409163513_add_template_to_template_field.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/config/locales/en.yml",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/db/migrate/20130410231527_fix_template_field_type.rb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/assets/javascripts/templates.js.coffee",
+		"/home/troy/.config/sublime-text-2/Packages/User/ruby_start.sublime-snippet",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/templates/index.html.erb",
+		"/home/troy/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/users/_form.html.erb",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/controllers/users_controller.rb",
+		"/home/troy/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/Tag/Tag Package.sublime-settings",
+		"/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/controllers/sessions_controller.rb",
+		"/home/troy/.config/sublime-text-2/Packages/User/start_erb.sublime-snippet",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/sim",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/simulation.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/interupt.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/burst.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/thread.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/example_simulation",
+		"/home/troy/.config/sublime-text-2/Packages/User/iff_ruby.sublime-snippet",
+		"/home/troy/.config/sublime-text-2/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/event.rb",
+		"/home/troy/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/process.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/example_simulation",
+		"/home/troy/.config/sublime-text-2/Packages/User/bh_core.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/Base File.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/SublimeREPL.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/Alignment/Default (Linux).sublime-keymap",
+		"/home/troy/.config/sublime-text-2/Packages/Alignment/Base File.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/SublimeLinter.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/#!.sublime-snippet",
+		"/home/troy/.desktop/school/operating_systems/project_04/OSProject_04.sublime-workspace",
+		"/home/troy/.desktop/school/operating_systems/project_04/README.md",
+		"/home/troy/.desktop/school/operating_systems/project_04/OSProject_04.sublime-project",
+		"/home/troy/.desktop/school/operating_systems/project_04/competition.input",
+		"/home/troy/.desktop/school/operating_systems/project_04/project4.pdf",
+		"/home/troy/.config/sublime-text-2/Packages/User/iff.sublime-snippet",
+		"/home/troy/.desktop/school/applied_algorithms_data_structures/project/railroads/main.cpp",
+		"/home/troy/.desktop/school/applied_algorithms_data_structures/project/railroads/generate_input.rb",
+		"/home/troy/.config/sublime-text-2/Packages/Default/copy_path.py",
+		"/home/troy/.desktop/school/applied_algorithms_data_structures/project/fire_station/link.txt",
+		"/home/troy/.desktop/school/applied_algorithms_data_structures/project/factovisers/uva_problem_10139.txt",
+		"/home/troy/test",
+		"/home/troy/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
+		"/home/troy/.ssh/id_rsa.pub"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"_character_form.html.erb",
+			"<open files>",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tf",
+			"\n          ",
+			"  ",
+			"f",
+			"i",
+			"if",
+			"s",
+			"\\Dtype\\D",
+			"\\dtype\\D",
+			"type\\D",
+			" %>",
+			"thread\\[0\\]",
+			"thread[0]",
+			"state_transition",
+			"puts state_transition",
+			"\\sthreads",
+			"state_transition",
+			"-1",
+			"@options",
+			"thread_io_time",
+			"thread_service_time",
+			"thread_finish_time",
+			"thread_arraval_time",
+			"completion_time",
+			"@events",
+			"EventClass",
+			"redo",
+			"options",
+			"ret",
+			"require",
+			"command",
+			"time",
+			"shift",
+			"INCREMENT",
+			"[^,]$",
+			"[^,]n$",
+			"[^,]$",
+			",$",
+			"ignore"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"cf",
+			"@threads[0]",
+			"thread[0].change_state",
+			"state_transition",
+			"0",
+			"$options",
+			"THREAD_IO_TIME",
+			"THREAD_SERVICE_TIME",
+			"THREAD_FINISH_TIME",
+			"THREAD_ARRIVAL_TIME",
+			"finish_time",
+			"@interupts",
+			"InteruptClass"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/assets/stylesheets/pages.css.scss",
+					"settings":
+					{
+						"buffer_size": 341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								337,
+								337
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": "save-only",
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": true,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/troy/.desktop/school/web_apps/dynamic_character_builder/app/views/pages/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 660,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								598,
+								598
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": "save-only",
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": true,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"simu",
+				"ruby/simulation.rb"
+			],
+			[
+				"sim",
+				"ruby/sim"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/troy/.config/sublime-text-2/Packages/User/projects/OSProject_05.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

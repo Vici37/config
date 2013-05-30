@@ -1,0 +1,7 @@
+{
+	"sublimelinter": "save-only",
+	"sublimelinter_notes": true,
+	"sublimelinter_fill_outlines": true,
+  "sublimelinter_gutter_marks": true,
+	"sublimelinter_mark_style": "outline"
+}

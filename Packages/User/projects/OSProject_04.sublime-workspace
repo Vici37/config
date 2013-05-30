@@ -1,0 +1,309 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"arri",
+				"arrival_time"
+			],
+			[
+				"nex",
+				"next_event_time"
+			],
+			[
+				"read",
+				"ready_queue"
+			],
+			[
+				"end",
+				"end_switch"
+			],
+			[
+				"MAXTIME",
+				"MAX_BURST_TIME"
+			],
+			[
+				"MAX",
+				"MAX_NUM_THREAD"
+			],
+			[
+				"arr",
+				"arrival_time"
+			],
+			[
+				"new",
+				"new_state"
+			],
+			[
+				"det",
+				"detailed"
+			],
+			[
+				"use",
+				"user_threads_count"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/C++/C++.sublime-build",
+	"command_palette":
+	{
+		"height": 75.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Open Modified Files"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":e",
+				":$ - EOF"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/troy/.config/sublime-text-2/Packages/User/projects/src/simulation.rb",
+		"/home/troy/.config/sublime-text-2/Packages/User/projects/src/example_simulation",
+		"/home/troy/.config/sublime-text-2/Packages/User/projects/src/sim",
+		"/home/troy/.config/sublime-text-2/Packages/User/projects/src/thread.rb",
+		"/home/troy/.config/sublime-text-2/Packages/User/projects/src/generate_input.rb",
+		"/home/troy/.config/sublime-text-2/Packages/User/projects/src/process.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/README.md",
+		"/home/troy/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/generate_input.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/process.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/test_input.txt",
+		"/home/troy/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/do-ruby.sublime-snippet",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/thread.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/simulation.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/example_simulation",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/burst.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/burst.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/sim",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/interupt.rb",
+		"/home/troy/.config/sublime-text-2/Packages/User/iff_ruby.sublime-snippet",
+		"/home/troy/.config/sublime-text-2/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/event.rb",
+		"/home/troy/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/ruby/process.rb",
+		"/home/troy/.desktop/school/operating_systems/project_04/src/example_simulation",
+		"/home/troy/.config/sublime-text-2/Packages/Tag/Tag Package.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/bh_core.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/Base File.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/SublimeREPL.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/Alignment/Default (Linux).sublime-keymap",
+		"/home/troy/.config/sublime-text-2/Packages/Alignment/Base File.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/User/SublimeLinter.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/troy/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/troy/.config/sublime-text-2/Packages/User/#!.sublime-snippet",
+		"/home/troy/.desktop/school/operating_systems/project_04/OSProject_04.sublime-workspace",
+		"/home/troy/.desktop/school/operating_systems/project_04/OSProject_04.sublime-project",
+		"/home/troy/.desktop/school/operating_systems/project_04/competition.input",
+		"/home/troy/.desktop/school/operating_systems/project_04/project4.pdf",
+		"/home/troy/.config/sublime-text-2/Packages/User/iff.sublime-snippet",
+		"/home/troy/.desktop/school/applied_algorithms_data_structures/project/railroads/main.cpp",
+		"/home/troy/.desktop/school/applied_algorithms_data_structures/project/railroads/generate_input.rb",
+		"/home/troy/.config/sublime-text-2/Packages/Default/copy_path.py",
+		"/home/troy/.desktop/school/applied_algorithms_data_structures/project/fire_station/link.txt",
+		"/home/troy/.desktop/school/applied_algorithms_data_structures/project/factovisers/uva_problem_10139.txt",
+		"/home/troy/test",
+		"/home/troy/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
+		"/home/troy/.ssh/id_rsa.pub"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open files>",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"terminated_threads",
+			"current_time",
+			"terminated_threads",
+			"@terminated_threads",
+			"[^\\@]terminated_threads",
+			"[^@]terminated_threads",
+			"@threads",
+			"thread\\[0\\]",
+			"thread[0]",
+			"state_transition",
+			"puts state_transition",
+			"\\sthreads",
+			"state_transition",
+			"-1",
+			"@options",
+			"thread_io_time",
+			"thread_service_time",
+			"thread_finish_time",
+			"thread_arraval_time",
+			"completion_time",
+			"@events",
+			"EventClass",
+			"redo",
+			"options",
+			"ret",
+			"require",
+			"command",
+			"time",
+			"shift",
+			"INCREMENT",
+			"[^,]$",
+			"[^,]n$",
+			"[^,]$",
+			",$",
+			"ignore"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"@new_threads",
+			"@threads[0]",
+			"thread[0].change_state",
+			"state_transition",
+			"0",
+			"$options",
+			"THREAD_IO_TIME",
+			"THREAD_SERVICE_TIME",
+			"THREAD_FINISH_TIME",
+			"THREAD_ARRIVAL_TIME",
+			"finish_time",
+			"@interupts",
+			"InteruptClass"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"simu",
+				"ruby/simulation.rb"
+			],
+			[
+				"sim",
+				"ruby/sim"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

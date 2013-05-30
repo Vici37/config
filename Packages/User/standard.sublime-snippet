@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[#include <cstdlib>
+#include <iostream>
+#include <cstdio>
+using namespace std;
+ 
+int main(int argc, const char *argv[]) {
+	${1:/* code */}
+	return 0;
+}]]></content>
+	<tabTrigger>standard</tabTrigger>
+	<scope>source.c++, source.c</scope>
+</snippet>
