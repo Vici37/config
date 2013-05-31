@@ -1,0 +1,40 @@
+snippet s
+	$
+snippet li
+	li $${1}, ${2}
+snippet sys
+	syscall
+snippet mv
+	move $${1}, $${2}
+snippet la
+	la $${1}, ${2}
+snippet add
+	add $${1}, $${2}, $${3}
+snippet addi
+	addi $${1}, $${2}, ${3}
+snippet sub
+	sub $${1}, $${2}, $${3}
+snippet sll
+	sll $${1}, $${2}, ${3}
+snippet srl
+	srl $${1}, $${2}, ${3}
+snippet sw
+	sw $${1}, ${2}($${3})
+snippet lw
+	lw $${1}, ${2}($${3})
+snippet 0
+	$zero
+snippet jal
+	jal ${1}
+snippet slti
+	slti $${1}, $${2}, ${3}
+snippet slt
+	slti $${1}, $${2}, $${3}
+snippet beq	
+	beq $${1}, $${2}, ${3}
+snippet bne
+	bne $${1}, $${2}, ${3}
+snippet j
+	j ${1}
+snippet jr
+	jr $${1:ra}

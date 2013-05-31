@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/troy/.desktop/school/web_apps/dynamic_character_builder/app'
+let g:netrw_dirhist_2='/home/troy/.desktop/school/web_apps/dynamic_character_builder'
+let g:netrw_dirhist_3='/home/troy/.desktop/Dropbox/School/C++ Final/BattleShip'
+let g:netrw_dirhist_4='/home/troy/.desktop/school/applied_algorithms_data_structures/project/cutting_sticks'
+let g:netrw_dirhist_5='/home/troy/.bsync/.sync'

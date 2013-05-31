@@ -1,0 +1,36 @@
+# Global snippets
+
+# (c) holds no legal value ;)
+snippet c)
+	`&enc[:2] == "utf" ? "©" : "(c)"` Copyright `strftime("%Y")` ${1:`g:snips_author`}. All Rights Reserved.${2}
+snippet date
+	`strftime("%b %d, %Y")`
+snippet problems
+	If you have an questions or problems about the following code, please email troyasornson37@gmail.com.
+snippet email
+	troyasornson37@gmail.com
+snippet {
+	{
+		${1}
+	}
+snippet make
+	COMPILER=${1}
+	FLAGS=${2}
+	COMMON_FILES=${3}
+	COMMON_OBJS=$(COMMON_FILES:.${4}=.o)
+	MAIN_PROGRAM=${5}
+	EXEC=${6}
+	REMOVE=$(EXEC) ${COMMON_OBJS} ${7}
+
+	all: $(COMMON_OBJS)
+		$(COMPILER) $(MAIN_PROGRAM) $(COMMON_OBJS) $(FLAGS) -o $(EXEC)
+
+	debug: $(COMMON_OBJS)
+		$(COMPILER) $(MAIN_PROGRAM) $(COMMON_OBJS) $(FLAGS) -DDEBUG -o $(EXEC)
+
+	$(COMMON_OBJS):
+		$(COMPILER) -c $(COMMON_FILES) $(FLAGS)
+
+	clean: c
+	c:
+		rm $(REMOVE)

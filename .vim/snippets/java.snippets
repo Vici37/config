@@ -1,0 +1,125 @@
+snippet main
+	public static void main (String [] args) {
+		${1}
+	}
+snippet pu
+	public
+snippet po
+	protected
+snippet pr
+	private
+snippet st
+	static
+snippet fi
+	final
+snippet ab
+	abstract
+snippet re
+	return
+snippet br
+	break;
+snippet de
+	default:
+		${1}
+snippet ca
+	catch(${1:Exception} ${2:e}) {${3}}
+snippet th
+	throw 
+snippet sy
+	synchronized
+snippet im
+	import
+snippet j.u
+	java.util
+snippet j.i
+	java.io.
+snippet j.b
+	java.beans.
+snippet j.n
+	java.net.
+snippet j.m
+	java.math.
+snippet if
+	if(${1}){
+		${2}
+	}
+snippet el
+	else{
+		${1}
+	}
+snippet elif
+	else if(${1}){
+		${2}
+	}
+snippet wh
+	while(${1}){
+		${2}
+	}
+snippet for
+	for(${1:int} ${2:i} = ${3}; $2 ${4:<} ${5}; ${6:++$2}){
+		${7}
+	}
+snippet forr
+	for(${1} ${2:i}: ${3}){
+		${3}
+	}
+snippet sw
+	switch (${1}) {${2}}
+snippet cs
+	case ${1}:
+		${2}
+snippet cle
+	public class ${1:`Filename()`} extends ${2:Object} {
+		${3}
+	}
+snippet t
+	public void test${1:Name}() throws Exception ${2}
+snippet cl
+	${1:public} class ${2:`Filename("", "untitled")`} {
+		${3}
+	}
+
+snippet con
+	${1:public} ${2:`Filename("", "Constructor")`}(${3}){
+		${4}
+	}${5}
+snippet in
+	interface ${1:`Filename("", "untitled")`} ${2:extends Parent}${3}
+snippet m
+	${1:void} ${2:method}(${3}) ${4:throws }${5}
+snippet v
+	${1:String} ${2:var}${3: = new}${4};${5}
+snippet co
+	static public final ${1:String} ${2:var} = ${3};${4}
+snippet cos
+	static public final String ${1:var} = "${2}";${3}
+snippet as
+	assert ${1:test} : "${2:Failure message}";${3}
+snippet scanner
+	Scanner scn = new Scanner(System.in);
+snippet filereader
+	FileReader reader = new FileReader(${1:str});
+snippet syso
+	System.out.print${1:ln}(${2});${3}
+snippet try
+	try{
+		${1}
+	} catch(${2:Exception e}){
+		${3}	
+	}${4}
+snippet {
+	{
+		${1}
+	}
+snippet fun
+	${1:public} ${2:void} ${3:function}(${4}){
+		${5}
+	}${6}
+snippet getter
+	public ${1:void} get${2:Name}(){
+		return ${3:Name};
+	} ${4}
+snippet setter
+	public void set${1:Name}(${2:Object} obj){
+		${3:$1} = obj;
+	} ${4}

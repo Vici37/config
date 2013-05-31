@@ -1,0 +1,107 @@
+# Read File Into Vector
+snippet readfile
+	std::vector<char> v;
+	if (FILE *${2:fp} = fopen(${1:"filename"}, "r")) {
+		char buf[1024];
+		while (size_t len = fread(buf, 1, sizeof(buf), $2))
+			v.insert(v.end(), buf, buf + len);
+		fclose($2);
+	}${3}
+# std::map
+snippet map
+	std::map<${1:key}, ${2:value}> map${3};
+# std::vector
+snippet vector
+	std::vector<${1:char}> v${2};
+# Namespace
+snippet ns
+	namespace ${1:`Filename('', 'my')`}{
+		${2}
+	} /* $1 */
+# Class
+snippet cl
+	class ${1:`Filename('$1_t', 'name')`} {
+		$2
+	};
+snippet st
+	struct ${1:`Filename('$1_t','name')`} {
+		$2
+	}
+snippet con
+	${1}(${2}) {
+		${3}
+	}
+# for a standard c++ file
+snippet standard
+	#include <cstdlib>
+	#include <iostream>
+	using namespace std;
+
+	int main(int argc, const char *argv[]) {
+		${1:/* code */}
+		return 0;
+	}
+snippet standardd
+	#include <cstdlib>
+	#include <iostream>
+	using namespace std;
+
+	int main() {
+		${1:/* code */}
+		return 0;
+	}
+# include
+snippet inc
+	#include <${1}>${2}
+snippet incc
+	#include "${1}"${2}
+snippet iff
+	if (${1:/* condition */}) ${2};${3}
+snippet forr
+	for (${1:int} ${2:i} = ${3:0}; $2 ${4:<} ${5:10}; ${6:++}$2) ${7};
+snippet if
+	if (${1:/* condition */}) {
+		${2}
+	}
+snippet elif
+	else if (${1:/* condition */}) {
+		${2:/* code */}
+	}
+snippet else
+	else {
+		${1:/* code */}
+	}
+snippet for
+	for (${1:int} ${2:i} = ${3:0}; $2 ${4:<} ${5:10}; ${6:++}$2) {
+		${7}
+	}
+snippet while
+	while (${1:true}) {
+		${2}
+	}
+snippet sw
+	switch (${1}) {
+		${2}	
+	}
+snippet case
+	case ${1}:
+		${2}
+		break;${3}
+snippet documentfun
+	/* ${2:description}
+	 * 
+	 * Arguments:
+	 * 	${3:arg1} ${4:- arg1 description}
+	 * 
+	 * Returns: 
+	 * 	${6}
+	 */${7}
+snippet documentcl
+	/* ${1:description}
+	 * 
+	 * Member Variables:
+	 * 	${2}
+	 *
+	 * Functions:
+	 * 	${3}
+	 */${4}
