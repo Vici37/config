@@ -162,6 +162,8 @@ alias shutdown='sudo shutdown -P now'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
+alias -g ......='../../../../..'
+alias -g .......='../../../../../..'
 alias .='ls'
 
 alias -g G='| grep'
