@@ -59,6 +59,9 @@ filetype plugin indent on
 compiler ruby
 
 set tabstop=2 	"Set tab spac
+set sts=2
+set ai
+set et
 set number			"show line numer set nonumber to remove
 set autoindent	"indent at the same level of previous line
 set shiftwidth=2	"indents of 2 spaces
@@ -73,6 +76,8 @@ set undodir=~/.vim/undos//
 set undofile
 set undolevels =1000
 set undoreload =10000
+
+au BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 "let ; work like :
 nmap ; :
@@ -141,7 +146,7 @@ function! StatuslineLongLineWarning()
 		let long_line_lens = s:LongLines()
 		if len(long_line_lens) > 0
 			let b:statusline_long_line_warning = "[" .
-						\ '#' . len(long_line_lens) . 
+						\ '#' . len(long_line_lens) .
 						\ '>' . (&tw ? &tw : 80) . "," .
 						\ 'm' . s:LongestLine() . "," .
 						\ '$' . max(long_line_lens) . "]"
@@ -203,4 +208,17 @@ function! s:Median(nums)
 	else
 		return (nums[l/2] + nums[(l/2)-1]) / 2
 	endif
+endfunction
+
+" Strip trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
 endfunction
