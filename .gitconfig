@@ -15,4 +15,5 @@
 	br=branch
 	co=checkout
 	tr=log --graph --pretty=format:'%C(cyan)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	tra=log --graph --pretty=format:'%C(cyan)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches --remotes --tags
 	aliases= !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
