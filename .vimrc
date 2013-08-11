@@ -96,6 +96,7 @@ nmap <silent> <C-n> :silent noh<CR>
 nmap <silent> <C-c> gg=G''<CR>:%s/\n\s*{/ {/g<CR>''<CR>
 nmap <silent> <F1> :RainbowParenthesesToggleAll<CR>
 nmap <silent> <F2> :call TogglePaste()<CR>
+nmap <silent> <F3> :!ctags<CR>
 
 ab vecd vector<double>
 ab vecc vector<char>
