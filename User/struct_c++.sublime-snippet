@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[struct ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} {
+	${1/(\w+).*/$1/}(${2:arguments});
+  ~${1/(\w+).*/$1/}();
+
+  ${0:/* data */}
+}]]></content>
+	<tabTrigger>st</tabTrigger>
+	<scope>source.c++</scope>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

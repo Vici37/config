@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[${stuff} if ${1:condition}]]></content>
+	<tabTrigger>iff</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

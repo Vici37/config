@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[COMPILER=${1}
+FLAGS=${2}
+COMMON_FILES=${3}
+COMMON_OBJS=\$(COMMON_FILES:.${4}=.o)
+MAIN_PROGRAM=${5}
+EXEC=${6}
+REMOVE=\$(EXEC) \$(COMMON_OBJS) ${7}
+
+all: \$(COMMON_OBJS)
+	\$(COMPILER) \$(MAIN_PROGRAM) \$(COMMON_OBJS) \$(FLAGS) -o \$(EXEC)
+debug: \$(COMMON_OBJS)
+	\$(COMPILER) \$(MAIN_PROGRAM) \$(COMMON_OBJS) \$(FLAGS) -DDEBUG -o \$(EXEC)
+
+\$(COMMON_OBJS):
+	\$(COMPILER) -c \$(COMMON_FILES) \$(FLAGS)
+
+clean: c
+c:
+	rm \$(REMOVE)]]></content>
+	<tabTrigger>make</tabTrigger>
+	<scope>source.makefile</scope>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[#!/usr/bin/env ruby
+
+
+]]></content>
+	<tabTrigger>#!</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

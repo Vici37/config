@@ -1,0 +1,39 @@
+[
+			{ "keys": ["f9"], "command": "toggle_side_bar" },
+			{ "keys": ["ctrl+."], "command": "indent" },
+			{ "keys": ["ctrl+,"], "command": "unindent" },
+			{ "keys": ["ctrl+shift+c"], "command": "reindent", "args": {"single_line": false} },
+			{ "keys": ["ctrl+alt+w"], "command": "close_project" },
+			{ "keys": ["ctrl+alt+o"], "command": "prompt_select_project" },
+			{ "keys": ["ctrl+r"], "command": "redo" },
+			{ "keys": ["ctrl+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+			{ "keys": ["ctrl+shift+w"], "command": "close_all"},
+			{ "keys": ["ctrl+shift+a"], "command": "prompt_add_folder"},
+			{ "keys": ["ctrl+alt+s"], "command": "save_project_as"},
+			{ "keys": ["ctrl+shift+alt+s"], "command": "save_all"}
+
+			// { "keys": ["ctrl+space"], "command": "fold"},
+			// { "keys": ["shift+space"], "command": "fold"}
+
+			// ctrl+shift+space = select current word
+			// ctrl+d = select next occurance of selected
+			// ctrl+k, ctrl+d = skip next occurance of selected
+			// ctrl+; = goto first instance of a word (find variable declerations)
+			// ctrl+r = goto function decleration
+			// ctrl+g = goto line #
+			// ctrl+alt+p = open project
+			// ctrl+h = open find/replace panel
+			// f6 = toggle spell check
+			// ctrl+f6 = next mispelling
+			// ctrl+shift+f6 = prev mispelling
+			// ctrl+shift+[up,down] = swap current line [up,down]
+			// ctrl+/ = toggle comment
+			// ctrl+shift+/ = toggle block
+			// ctrl+j = join this line and below line
+			// ctrl+shift+d = duplicate line
+			// ctrl+t = switch current character with previous character
+
+			// alt+shift+1-4 = open in columns
+			// ctrl+1-4 = change focus to that panel
+			// ctrl+shift+1-4 = move tab to panel
+]

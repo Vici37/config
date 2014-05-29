@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[\documentclass[letterpaper, 12pt]{article}
+  \usepackage[top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+  \usepackage{amsfonts}
+  \usepackage{amsmath}
+  \usepackage{amssymb}
+  \usepackage{amsthm}
+  \usepackage[usenames]{color}
+  \usepackage{graphicx}
+ 
+  \def\R{{\mathbb{R}}}
+  \def\Z{{\mathbb{Z}}}
+  \def\B{{\mathbb{B}}}
+  \def\N{{\mathbb{N}}}
+  \def\Q{{\mathbb{Q}}}
+  \def\C{{\mathbb{C}}}
+  \def\d{{\partial}}
+ 
+  \newcommand{\imply}{\Rightarrow}
+  \begin{document}
+  \definecolor{tb}{rgb}{0,0,0.7}
+  \renewcommand{\labelenumi}{(\alph{enumi})}
+  \pagestyle{empty}
+  \title{${1:Title}\\\\${2:Subtitle}}
+  \author{${3:Troy Sornson}}
+  ${4:%}\date{${5}}
+  \maketitle
+  ${0}
+\end{document}]]></content>
+	<tabTrigger>newreport</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>
