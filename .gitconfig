@@ -7,6 +7,10 @@
 	excludesfile = /home/troy/.gitignore_global
 [help]
 	autocorrect = 1
+[color "status"]
+  added = white bold
+  changed = green bold
+  untracked = magenta bold
 [alias]
 	ci=commit
 	st=status

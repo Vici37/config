@@ -7,7 +7,7 @@ precmd() {
 	if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]] {
 	  zstyle ':vcs_info:*' formats "%s:(%b)%u%c"
 	} else {
-	  zstyle ':vcs_info:*' formats "%s:(%b)%u%c%F{red}*" 
+	  zstyle ':vcs_info:*' formats "%s:(%b)%u%c%F{red}*"
   }
 	vcs_info 'prompt'
 }
@@ -19,13 +19,13 @@ chpwd() {
 
 # This function is called PERIOD number of seconds
 PERIOD=300
-periodic() { 
-	temp=`acpi | awk ' { print $4 } ' | sed 's/[%,]//g'`
-	if [[ 50 -gt $temp ]] {
-		RIGHT_DISPLAY_PERIODIC='Bat:%F{red}'$temp
-	} else {
-		RIGHT_DISPLAY_PERIODIC=''
-	}
+periodic() {
+	#temp=`acpi | awk ' { print $4 } ' | sed 's/[%,]//g'`
+	#if [[ 50 -gt $temp ]] {
+	#	RIGHT_DISPLAY_PERIODIC='Bat:%F{red}'$temp
+	#} else {
+	#	RIGHT_DISPLAY_PERIODIC=''
+	#}
 	#temp=`date +%H`
 	##if [[ $temp -gt 7 && $temp -lt 13 ]] {
 	#	setxkbmap dvorak
@@ -36,12 +36,12 @@ periodic() {
 }
 
 # This function is called after a terminal exits (not sub shells)
-zshexit() { 
-	`~/.scripts/backup.sh`
+zshexit() {
+	#`~/.scripts/backup.sh`
 }
 
 # Set up the prompt
-setopt PROMPT_SUBST 
+setopt PROMPT_SUBST
 
 autoload -Uz vcs_info
 autoload -Uz promptinit
@@ -115,7 +115,7 @@ setopt PUSHD_TO_HOME
 setopt PUSHD_IGNORE_DUPS
 
 # 10 second wait if you do something that will delete everything.  I wish I'd had this before...
-setopt RM_STAR_WAIT
+# setopt RM_STAR_WAIT
 
 # use magic (this is default, but it can't hurt!)
 setopt ZLE
@@ -166,15 +166,13 @@ alias -g ......='../../../../..'
 alias -g .......='../../../../../..'
 alias .='ls'
 
-alias -g G='| grep'
-alias -g L='| less'
 alias -g NE='2> /dev/null'
 alias -g NO='> /dev/null'
 
 alias VIM='vim -p'
 alias vim='vim -p'
 alias vi='vim'
-alias sub='~/.sublime_text_2/sublime_text&'
+#alias sub='~/.sublime_text_2/sublime_text&'
 
 alias website='cd /var/www/'
 alias sc='cd ~/.desktop/school/'
@@ -182,6 +180,7 @@ alias ad='cd ~/.desktop/school/applied_algorithms_data_structures/'
 alias op='cd ~/.desktop/school/operating_systems/'
 alias we='cd ~/.desktop/school/web_apps/'
 alias movies='cd /media/sda3/Users/Troy\ Sornson/My\ Documents/My\ Videos/My\ Videos/movies/'
+alias done='paplay ~/Music/microwave-oven-bell-1.wav'
 
 alias t='bash ~/.scripts/todo.sh'
 alias tl='cal;echo "----------------------"; t -c ls'
@@ -195,12 +194,14 @@ alias vimrc='sudo vim /etc/vim/vimrc'
 alias backup-general='tar -cjf ~/.backup/`date +%Y-%m-%d`-backup-general.tar.bz2 -T ~/.backup_general'
 
 alias slaughter='kill -9'
+alias fucking='sudo'
 alias bat='bash ~/.scripts/bat.sh'
 alias r='mv -t ~/.trash'
 alias clear-trash='shred -zu ~/.trash/*'
 alias cal='cal -3'
 alias imagine='ssh tsornson@imagine.mines.edu'
 alias hash='ruby ~/.scripts/hash.rb'
+alias matlab='cd ~/.matlab_exe/scripts/; ./../Matlab/bin/matlab&'
 
 # open these types of files in vim
 alias -s txt=vim
@@ -226,7 +227,7 @@ alias -s ods=soffice
 alias -s latex=pdflatex
 alias -s tex=pdflatex
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -45,8 +45,7 @@ ${hr 1}
 ${upspeedgraph wlan0}
 ${hr 1}
 $processes processes ($running_processes running)
-CPU temp $alignr ${exec sensors | grep temp1 | awk '{print $2}' | sed 's/°//' | sed 's/+//'} 
-${execbar sensors | grep temp1 | awk '{print $2}' | sed 's/°//' | sed 's/+//'}
+CPU temp $alignr ${exec sensors | grep Physical | awk '{print $4}' | sed 's/°//' | sed 's/+//'}
 CPU1 $alignr ${cpu cpu0}%
 ${cpubar cpu0}
 CPU2 $alignr ${cpu cpu1}%
@@ -55,6 +54,14 @@ CPU3 $alignr ${cpu cpu2}%
 ${cpubar cpu2}
 CPU4 $alignr ${cpu cpu3}%
 ${cpubar cpu3}
+CPU5 $alignr ${cpu cpu4}%
+${cpubar cpu4}
+CPU6 $alignr ${cpu cpu5}%
+${cpubar cpu5}
+CPU7 $alignr ${cpu cpu6}%
+${cpubar cpu6}
+CPU8 $alignr ${cpu cpu7}%
+${cpubar cpu7}
 MEM $alignc $mem / $memmax $alignr $memperc%
 $membar
 / $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_free_perc /}%
