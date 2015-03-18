@@ -126,7 +126,7 @@ setopt VI
 
 # only fools wouldn't do this ;-)
 export EDITOR="vi"
-setopt IGNORE_EOF
+# setopt IGNORE_EOF
 
 # If I could disable Ctrl-s completely I would!
 setopt NO_FLOW_CONTROL
@@ -135,7 +135,7 @@ setopt NO_FLOW_CONTROL
 setopt NO_BEEP
 
 # Keep echo "station" > station from clobbering station
-setopt NO_CLOBBER
+# setopt NO_CLOBBER
 
 # Case insensitive globbing
 setopt NO_CASE_GLOB
